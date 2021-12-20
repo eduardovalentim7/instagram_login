@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none ;
+    font-family: sans-serif;
+    font-size: 14px;
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color:#E0FFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.side-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-right: 60px;
+}
+
+.side-left img{
+    height: 50rem;
+}
+
+/* Section da Direita  */
+
+
+
+.side-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;  
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;  
+ }
+ 
+ 
+ .form input{
+ width: 300px;
+ padding: 10px;
+ border: 1px solid #D3D3D3;
+ border-radius: 10px
+ }
+
+ form input:hover{
+     background-color:#87CEFA ;         
+ } 
+
+ form a:hover{
+     background-color: #87CEFA;
+     color: #ffffff;
+
+ }
+ 
+ .instagram-login{   
+     margin-top: 15px; 
+     height: 6vh; 
+     background-color: #0095f6;
+     color:#ffffff;
+     padding: 8px;
+     border-radius: 10px;
+     text-align: center;
+     font-size: 14px;
+     font-weight: bolder;
+  }
+
+
+.box1{
+    margin-top: 12vh;
+    border-radius: 40px 0 40px 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: column;
+    width: 100%; 
+    padding: 1.3rem 0;
+    border: 1px solid #D3D3D3;  
+    background-color: #ffffff; 
+}
+
+.logo-insta{
+    margin-left: 11vh
+}
+
+
+.box1:nth-child(1){
+  min-height: 22rem;  
+
+}
+
+.acesso_facebook p{
+    font-weight: 400;
+    padding: 10px;
+}
+.acesso_facebook img{
+    margin-top: 20px;
+    width: 15px;
+    height: 15px; 
+}
+.acesso_facebook p{
+    color: #385185;
+    font-size: 15px;
+}
+
+.face2{
+    padding: 20px;
+}
+
+.face2 a{
+    color:#385185;
+    font-weight: bolder;
+}
+
+.esqueceu_senha{
+    color: #385185;
+}
+
+
+.box2{
+    align-items: center;
+    border-radius: 40px 0 40px 0; 
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid #D3D3D3;  
+    background-color: #ffffff; 
+    
+ 
+}
+
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+   overflow: hidden;/* não excede o tamanho da Div*/
+}
+
+.profile-photo img{
+    height: 7rem;
+    border-radius: 50%;
+
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display:flex ;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url('./img/googleplay-button.png');
+}
+.app-download:nth-child(2){
+    background-image: url('/img/apple-button.png');
+}
+
+/*  linha separadora  */
+
+.separator{
+    display: flex;
+    align-items: center;
+
+}
+.separator section:nth-child(1){
+    background: grey;
+    width: 100%;
+    height: 1px;
+}
+
+.separator section:nth-child(2){
+  color: grey;
+  font-weight: 400;  
+  padding: 0 1.35rem;
+}
+
+.separator section:nth-child(3){
+    background: grey;
+    width: 100%;
+    height: 1px;
+}
+
+.cad_blue{
+    color:#0095f6;
+    font-weight: bolder;
+}
+
+.acesso_facebook{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+/* Responsividade */
+
+/* largura maxima */
+@media(max-width:1024px){
+    .side-right{
+        width: 90%;
+    }
+}
+
+@media(max-width:650px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .side-left{
+        display: none;
+    }
+    .box1{
+        border: none;
+    }
+    body{
+        background: none;
+    }
+
+
+
+}
+
